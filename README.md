@@ -14,6 +14,8 @@ Add next line to `~/.profile`:
 export PATH="$PATH:~/.local/bin"
 ```
 
+and then `source ~/.profile`
+
 You might need to add `--python` variant depending on your setup:
 
 ```sh
