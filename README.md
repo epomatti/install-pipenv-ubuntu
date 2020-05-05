@@ -1,27 +1,18 @@
-# Install pipenv
+# Ubuntu `pipenv`
 
-Using python 3:
-
-```sh
-sudo apt install python3-pip
-pip3 install --user pipenv
-python3 -m site --user-base
-```
-
-Add next line to `~/.profile`:
-
-```
-export PATH="$PATH:~/.local/bin"
-```
-
-and then `source ~/.profile`
-
-You might need to add `--python` variant depending on your setup:
+Ubuntu 20.04 was used with this scripts:
 
 ```sh
-pipenv install --python=/usr/bin/python3.6
+apt install python3-pip
+pip3 install pipenv
+
+echo "" >> ~/.profile
+echo 'export PATH="$PATH:~/.local/bin"' >> ~/.profile
+source ~/.profile
+
+pipenv --version
 ```
 
 Reference:
 
-http://manpages.ubuntu.com/manpages/eoan/en/man1/pipenv.1.html
+[pipenv Documentation](http://manpages.ubuntu.com/manpages/focal/en/man1/pipenv.1.html)
